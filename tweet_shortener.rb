@@ -21,7 +21,7 @@ def dictionary
   dictionary
 end
 
-example_tweet = "OMG you guys, you won't believe how sweet my kitten is. My kitten is like super cuddly and too cute to be believed right?"
+example_tweet = "too OMG you guys, you won't believe how sweet my kitten is. My kitten is like super cuddly and too cute to be believed right?"
 
 def word_substituter(tweet)
   # accepts a string and uses #dictionary to check for words to substitute
