@@ -47,7 +47,7 @@ def selective_tweet_shortener(tweet)
   # accepts a tweet, and only shortens it if it is longer than 140 char
   
   if tweet.length > 140
-    tweet_shortener(tweet)
+    word_substituter(tweet)
   end
 end
 
