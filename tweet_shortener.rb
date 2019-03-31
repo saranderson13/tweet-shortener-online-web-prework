@@ -24,8 +24,10 @@ def word_substituter(tweet)
   # accepts a string and uses #dictionary to check for words to substitute
   # returns shortened tweet
   
-  tweet.split.each do |word|
-    
+  arrayed_tweet = tweet.split
+  
+  arrayed_tweet.each do |word|
+     
   end
   binding.pry
   
