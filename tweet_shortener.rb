@@ -39,7 +39,7 @@ def word_substituter(tweet)
   arrayed_tweet.join(" ")
   # binding.pry
 end
-word_substituter(example_tweet)
+# word_substituter(example_tweet)
 
 def bulk_tweet_shortener(array_of_tweets)
   # accepts an array of tweets and shortens them
