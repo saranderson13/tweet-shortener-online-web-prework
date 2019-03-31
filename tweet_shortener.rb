@@ -30,8 +30,9 @@ def word_substituter(tweet)
   arrayed_tweet = tweet.split
   
   arrayed_tweet.each do |word|
-    dictionary.each do |to_be_substituted|
+    dictionary.each do |needs_to_be_substituted|
       confirmation = "You are here"
+      word == needs_to_be_substituted[0] ? word = needs_to_be_substituted[1] : word
       binding.pry
     end
   end
