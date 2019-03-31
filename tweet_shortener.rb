@@ -53,4 +53,6 @@ def shortened_tweet_truncator(tweet)
   # accepts a tweet and truncates it to 140 with "..."
   # only if it is still too long after having been shortened
   
+  
+  
 end
