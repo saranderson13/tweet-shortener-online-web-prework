@@ -25,7 +25,7 @@ def word_substituter(tweet)
   # returns shortened tweet
   
   tweet.split
-  binding.pry
+  # binding.pry
   
 end
 
