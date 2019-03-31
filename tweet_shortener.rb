@@ -1,4 +1,5 @@
 # Write your code here.
+require 'pry'
 
 def dictionary
   # returns a hash that contains word substitutions
@@ -17,11 +18,18 @@ def dictionary
   dictionary
 end
 
+example_tweet = 
+
 def word_substituter(tweet)
   # accepts a string and uses #dictionary to check for words to substitute
   # returns shortened tweet
   
+  tweet.split
+  binding.pry
+  
 end
+
+word_substituter(example_tweet)
 
 def bulk_tweet_shortener(array_of_tweets)
   # accepts an array of tweets and shortens them
