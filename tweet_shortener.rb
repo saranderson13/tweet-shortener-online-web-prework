@@ -24,11 +24,12 @@ def word_substituter(tweet)
   # accepts a string and uses #dictionary to check for words to substitute
   # returns shortened tweet
   
-  tweet.split
-  # binding.pry
+  tweet.split.each do |word|
+    
+  end
+  binding.pry
   
 end
-
 word_substituter(example_tweet)
 
 def bulk_tweet_shortener(array_of_tweets)
