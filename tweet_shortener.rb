@@ -7,13 +7,16 @@ def dictionary
   # keys are the substitutions
   
   dictionary = {
-    "hi" => "hello",
-    "2" => ["to", "two", "too"],
-    "4" => ["for", "four"],
-    "b" => "be",
-    "u" => "you",
-    "@" => "at",
-    "&" => "and"
+    "hello" => "hi",
+    "to" => "2",
+    "two" => "2",
+    "too" => "2",
+    "for" => "4" 
+    "four" => "4",
+    "be" => "b",
+    "you" => "u",
+    "at" => "@",
+    "and" => "&"
   }
   dictionary
 end
@@ -27,9 +30,11 @@ def word_substituter(tweet)
   arrayed_tweet = tweet.split
   
   arrayed_tweet.each do |word|
-     
+    dictionary.each do |to_be_substituted|
+      confirmation = "You are here"
+      binding.pry
+    end
   end
-  binding.pry
   
 end
 word_substituter(example_tweet)
