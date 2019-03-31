@@ -39,9 +39,8 @@ end
 def bulk_tweet_shortener(array_of_tweets)
   # accepts an array of tweets and shortens them
   # puts the result to the screen
-  # returns array of shortened tweets
   
-  
+  array_of_tweets.each { |tweet| puts word_substituter(tweet) }
   
 end
 
