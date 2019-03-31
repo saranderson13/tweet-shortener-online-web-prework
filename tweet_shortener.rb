@@ -30,7 +30,7 @@ def word_substituter(tweet)
   working_tweet = tweet.split
   
   working_tweet.each do |word|
-    dictionary.each { |needs_to_be_substituted| word.lowercase == needs_to_be_substituted[0] ? word.replace(needs_to_be_substituted[1]) : word }
+    dictionary.each { |needs_to_be_substituted| word.downcase == needs_to_be_substituted[0] ? word.replace(needs_to_be_substituted[1]) : word }
   end
   
   working_tweet.join(" ")
