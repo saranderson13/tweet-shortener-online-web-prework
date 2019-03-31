@@ -31,7 +31,7 @@ def word_substituter(tweet)
   
   arrayed_tweet.each do |word|
     dictionary.each do |needs_to_be_substituted|
-      word == needs_to_be_substituted[0] ? word = needs_to_be_substituted[1] : word
+      word == needs_to_be_substituted[0] ? word.replace(needs_to_be_substituted[1]) : word
       # binding.pry
     end
   end
