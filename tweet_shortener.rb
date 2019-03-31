@@ -27,14 +27,13 @@ def word_substituter(tweet)
   # accepts a string and uses #dictionary to check for words to substitute
   # returns shortened tweet
   
-  tweet.split.each do |word|
-    dictionary.each do |needs_to_be_substituted|
-      word == needs_to_be_substituted[0] ? word.replace(needs_to_be_substituted[1]) : word
-      # binding.pry
-    end
+  working_tweet = tweet.split
+  
+  working_tweet.each do |word|
+    dictionary.each { |needs_to_be_substituted| word == needs_to_be_substituted[0] ? word.replace(needs_to_be_substituted[1]) : word }
   end
   
-  tweet.join(" ")
+  working_tweet.join(" ")
 end
 
 def bulk_tweet_shortener(array_of_tweets)
