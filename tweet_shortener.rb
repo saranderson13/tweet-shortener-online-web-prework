@@ -29,14 +29,14 @@ def word_substituter(tweet)
   
   arrayed_tweet = tweet.split
   
-  arrayed_tweet.each do |word|
+  arrayed_tweet.collect do |word|
     dictionary.each do |needs_to_be_substituted|
-      confirmation = "You are here"
       word == needs_to_be_substituted[0] ? word = needs_to_be_substituted[1] : word
-      binding.pry
+      # binding.pry
     end
   end
   
+  binding.pry
 end
 word_substituter(example_tweet)
 
