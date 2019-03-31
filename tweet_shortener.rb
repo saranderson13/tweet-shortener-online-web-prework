@@ -32,7 +32,7 @@ def word_substituter(tweet)
   arrayed_tweet.each do |word|
     dictionary.each do |to_be_substituted|
       confirmation = "You are here"
-      # binding.pry
+      binding.pry
     end
   end
   
